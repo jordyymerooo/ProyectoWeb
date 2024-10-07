@@ -1,0 +1,160 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dbf3df; /* Fondo principal */
+}
+
+/* Encabezado */
+header {
+    background-color: #5b8f60; /* Fondo del encabezado */
+    width: 100%;
+    color: #0e0d0d;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido del encabezado */
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logo img {
+    width: 200px;
+    height: 150px;
+}
+
+.banner {
+    text-align: center;
+}
+
+.user-dropdown {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.user_logo {
+    width: 50px;
+    height: 50px;
+}
+
+/* Botón desplegable */
+.dropbtn {
+    background-color: #afd4b3; /* Fondo del botón de menú */
+    color: white; /* Texto del botón de menú */
+    border: none;
+    cursor: pointer;
+    padding: 7px 10px;
+    border-radius: 15px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:  #ede7f1; /* Fondo del contenido del menú desplegable */
+    min-width: 160px;
+    z-index: 1;
+    top: 100%; /* Muestra el menú debajo del botón */
+    left: -90px;
+    right: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.user-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Estilos para las opciones del menú desplegable */
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #0d0d0e; /* Color de enlaces en el menú */
+}
+
+.dropdown-content a:hover {
+    background-color: #c4e9cb; /* Fondo al pasar el mouse sobre las opciones */
+    color: #0d0d0e; /* Color de texto al pasar el mouse sobre las opciones */
+}
+
+
+/* Estilo para los contenedores de cuadro sombreado */
+.container {
+    display: flex; /* Mostrar los cuadros sombreados en línea */
+    justify-content: space-around; /* Espacio alrededor para distribuir uniformemente */
+    flex-wrap: wrap; /* Permitir envoltura cuando no hay suficiente espacio */
+    padding: 20px;
+    margin-bottom: auto; /* Empujar el pie de página hacia abajo */
+}
+
+.cuadro-sombreado {
+    width: calc(45% - 20px); /* Ajustar según tus necesidades y el espacio entre ellos */
+    max-width: 400px; /* Ancho máximo para los cuadros sombreados */
+    border: 2px solid #000000;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 20px; /* Espacio inferior entre los cuadros */
+    box-sizing: border-box; /* Asegurar que el padding y border estén dentro del ancho especificado */
+}
+
+.cuadro-sombreado h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cuadro-sombreado form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cuadro-sombreado label {
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.cuadro-sombreado input[type="file"],
+.cuadro-sombreado input[type="text"],
+.cuadro-sombreado textarea,
+.cuadro-sombreado select,
+.cuadro-sombreado input[type="date"] {
+    width: calc(100% - 20px); /* Ajustar según el padding del contenedor */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.cuadro-sombreado input[type="submit"] {
+    background-color: #71c070;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cuadro-sombreado input[type="submit"]:hover {
+    background-color: #60a865;
+}
+
+/* Estilos para el pie de página */
+footer {
+    color: #080808;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}

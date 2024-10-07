@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Publicacion</title>
+    <link rel="stylesheet" href="stylles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../pag_1.html"><img src="../../Logotipo/logo.png" alt="Logo"></a>
+        </div>
+        <section class="banner">
+            <h1>Crear nueva publicacion</h1>
+        </section>
+        <!-- Botón del menú desplegable -->
+        <div class="user-dropdown">
+            <button class="dropbtn"><img class="user_logo" src="../../Logotipo/user_logo.png"></button>
+            <div class="dropdown-content" id="dropdown-options">
+                <!-- Opciones del menú desplegable -->
+                <a href="../../Pag_principal/perfil.html">Perfil</a>
+                <a href="docs.html">Mis publicaciones</a>
+                <a href="../../Login/inicio.html">Cerrar Sesión</a>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <div class="container">
+            <div class="cuadro-sombreado">
+                <!-- Formulario para crear nueva publicación -->
+                <form id="publicationForm">
+                    <label for="tipo">Tipo de Publicación:</label><br>
+                    <select id="tipo" name="tipo" required>
+                        <option value="">Seleccione el tipo de publicación</option>
+                        <option value="tesis">Tesis</option>
+                        <option value="articulo">Artículo Científico</option>
+                        <option value="revista">Revista</option>
+                    </select><br><br>
+
+                    <label for="titulo">Título:</label><br>
+                    <input type="text" id="titulo" name="titulo" required><br><br>
+    
+                    <label for="autor">Autor:</label><br>
+                    <input type="text" id="autor" name="autor" required><br><br>
+    
+                    <label for="fecha">Fecha de Publicación:</label><br>
+                    <input type="date" id="fecha" name="fecha" required><br><br>
+    
+                    <label for="descripcion">Descripción:</label><br>
+                    <textarea id="descripcion" name="descripcion" rows="4" required></textarea><br><br>
+    
+                    <input type="submit" value="Crear Publicación">
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="pie">
+            <p>Todos los derechos reservados &copy; Jordy Mero 2024</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tus Documentos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../pag_1.html"><img src="../../Logotipo/logo.png" alt="Logo"></a>
+        </div>
+        <section class="banner">
+            <h1>Mis Documentos</h1>
+        </section>
+        <!-- Agregar el botón del menú desplegable aquí -->
+        <div class="user-dropdown">
+            <button class="dropbtn" onclick="toggleDropdown()"><img class="user_logo" src="../../Logotipo/user_logo.png"></button>
+            <div class="dropdown-content" id="dropdown-options">
+                <!-- Opciones del menú desplegable aquí -->
+                <a href="../../Pag_principal/perfil.html">Perfil</a>
+                <a href="../../Pag_principal/Publicaciones/docs.html">Mis publicaciones</a>
+                <a href="../../Login/inicio.html">Cerrar Sesión</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="busqueda">
+            <a href="crear.html"><button class="btn-crear">Crear publicación</button></a>
+            <a href="Crear_publicaciones/publi.html"><button>Subir documento</button></a>
+    </section>
+        <section class="publicaciones">
+            <div class="documento">
+                <h2>Tesis #1</h2>
+                <p>Descripción de la Tesis #1.</p>
+                <a href="SGSI JORDY MERO.pdf" target="_blank">Ver Documento</a>
+            </div>
+            <div class="documento">
+                <h2>Revista #2</h2>
+                <p>Descripción de la revista #2.</p>
+                <a href="TAREA 1 JORDY MERO .pdf" target="_blank">Ver Documento</a>
+            </div>
+            <!-- Agrega más documentos aquí -->
+        </section>
+    </main>
+    <footer>
+        <div class="pie">
+            <p>Todos los derechos reservados &copy; Jordy Mero 2024</p>
+        </div>
+    </footer>
+</body>
+</html>

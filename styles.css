@@ -1,0 +1,177 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dbf3df; /* Fondo principal */
+}
+
+/* Encabezado */
+header {
+    background-color: #5b8f60; /* Fondo del encabezado */
+    color: #0c0c0c;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-height: 100px;
+    margin-left: 15px;
+}
+
+.logo img {
+    width: 200px;
+    height: 150px;
+    margin-top: -25px;
+}
+
+.banner h1 {
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.boton-registro, .boton-login {
+    padding: 10px 20px;
+    background-color: #104b00; /* Color del botón */
+    color: #fff;
+    border: 3px solid #ede7f6;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.boton-registro:hover, .boton-login:hover {
+    background-color: #80c795; /* Cambio de color al pasar el ratón por encima */
+}
+
+/* Estilo para la búsqueda */
+.busqueda {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.busqueda input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background-color: #d1ebd7;
+    font-weight: bold;
+}
+
+.busqueda button {
+    padding: 10px 20px;
+    background-color: #0e7b20;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.busqueda button:hover {
+    background-color: #006b29;
+}
+
+/* Contenido principal */
+.container {
+    padding: 20px;
+}
+
+.separador {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.columna {
+    flex: 1;
+    text-align: center;
+}
+
+.contenido-columna {
+    background-color:  #fbfafc; /* Fondo blanco del contenedor */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra del contenedor */
+    border: 2px solid #000000;
+    border-radius: 5px; /* Bordes redondeados del contenedor */
+    padding: 10px;
+    text-align: center;
+}
+
+.columna p {
+    display: inline;
+    margin: 0;
+    color: rgba(51, 51, 51, 0.7);
+}
+
+.cuadro-blanco {
+    margin-top: 10px;
+    height: 55vh; /* Ajusta la altura según tus preferencias */
+    border: 2px solid #000000;
+    display: flex;
+    border-radius: 5px;
+    background-color: #fbfafc;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contenido-cuadro {
+    padding: 150px;
+}
+
+.contenido-cuadro h3 {
+    margin: 0;
+}
+
+.contenido-cuadro p {
+    margin: 0;
+    text-align: left;
+}
+
+button{
+    background-color: #0c470a;
+    border: none;
+    color: #f0eeee;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}*/
+
+/* Pie de Página */
+footer {
+    color: #080808;
+    padding: 1px 0;
+    text-align: center; /* Centra el texto horizontalmente */
+    position: absolute; /* Establecemos posición absoluta en el footer */
+    bottom: 0; /* Lo posicionamos en la parte inferior */
+    width: 100%;
+    display: flex; /* Utilizamos flexbox para alinear horizontalmente */
+    justify-content: center; /* Centra el contenido del footer */
+    align-items: center; /* Alineación vertical al centro */
+}
+
+.pie {
+    margin-left: 10px;
+}
